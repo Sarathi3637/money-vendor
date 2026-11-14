@@ -1,0 +1,101 @@
+{
+  "dataset": {
+    "n_train": 56454,
+    "n_train_positives": 2,
+    "n_test": 14114,
+    "n_test_positives": 1,
+    "n_features": 58
+  },
+  "random_forest": {
+    "pr_auc": 7.085163667280714e-05,
+    "roc_auc": 0.49681145043576846,
+    "default_threshold_0.5": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "optimal_threshold": {
+      "threshold": 0.0,
+      "f1_score": 0.00014169323414806945,
+      "precision": 7.085163667280714e-05,
+      "recall": 1.0,
+      "confusion_matrix": {
+        "TN": 0,
+        "FP": 14113,
+        "FN": 0,
+        "TP": 1
+      }
+    },
+    "top_features": [
+      {
+        "feature": "from_unique_destinations",
+        "importance": 0.14922692111483452
+      },
+      {
+        "feature": "from_fan_out_degree",
+        "importance": 0.13535158301911887
+      },
+      {
+        "feature": "from_total_sent",
+        "importance": 0.13068950403322668
+      },
+      {
+        "feature": "time_diff_prev_from",
+        "importance": 0.07992491639121686
+      },
+      {
+        "feature": "from_bank_frequency",
+        "importance": 0.07791038618447146
+      },
+      {
+        "feature": "from_mean_sent",
+        "importance": 0.06955890645749357
+      },
+      {
+        "feature": "to_total_received",
+        "importance": 0.038365388879643504
+      },
+      {
+        "feature": "to_fan_in_degree",
+        "importance": 0.0360288194840352
+      },
+      {
+        "feature": "to_unique_sources",
+        "importance": 0.028104063906202653
+      },
+      {
+        "feature": "to_mean_received",
+        "importance": 0.025487623227397876
+      },
+      {
+        "feature": "amount_to_from_mean_ratio",
+        "importance": 0.024696513962287885
+      },
+      {
+        "feature": "minute",
+        "importance": 0.024282655586471826
+      },
+      {
+        "feature": "amount_received",
+        "importance": 0.023715372337094347
+      },
+      {
+        "feature": "log_amount_received",
+        "importance": 0.023045213325066243
+      },
+      {
+        "feature": "log_amount_paid",
+        "importance": 0.01868832117503355
+      }
+    ]
+  },
+  "isolation_forest": {
+    "n_anomalies_flagged": 5,
+    "anomaly_rate": 0.0003542581833640357,
+    "iso_roc_auc": 0.9900092113654078,
+    "iso_pr_auc": 0.007042253521126761,
+    "positives_anomaly_percentiles": [
+      99.00099192291341
+    ]
+  }
+}
